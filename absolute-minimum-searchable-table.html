@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <title>Absolute Minimum for Searchable Table with List.js</title>
+</head>
+
+<body>
+  <div id="projects">
+
+    <input class="search" placeholder="Search"></input>
+    <button class="sort" data-sort="id">Sort by ID</button>
+    <button class="sort" data-sort="project-name">Sort by Project Name</button>
+    <button class="sort" data-sort="data">Sort by Project Data</button>
+
+    <table>
+      <tbody class="list">
+        <tr>
+          <td class="id">9</td>
+          <td class="project-name">Project-1</td>
+          <td class="data">Cupcake ipsum dolor sit. Amet dessert fruitcake chocolate sweet roll jelly. </td>
+        </tr>
+        <tr>
+          <td class="id">8</td>
+          <td class="project-name">Project-2</td>
+          <td class="data">Marzipan chocolate bar muffin liquorice sweet. Tart I love macaroon. </td>
+        </tr>
+        <tr>
+          <td class="id">7</td>
+          <td class="project-name">Project-3</td>
+          <td class="data">I love macaroon cupcake sugar plum tart I love sweet biscuit jelly. Cotton candy jelly beans topping. </td>
+        </tr>
+        <tr>
+          <td class="id">6</td>
+          <td class="project-name">Project-4</td>
+          <td class="data">Fruitcake sweet roll sesame snaps toffee sesame snaps lemon drops chupa chups jujubes. </td>
+        </tr>
+        <tr>
+          <td class="id">5</td>
+          <td class="project-name">Project-5</td>
+          <td class="data">Ice cream brownie pudding candy liquorice pie sesame snaps I love. Donut I love candy sugar plum. </td>
+        </tr>
+        <tr>
+          <td class="id">4</td>
+          <td class="project-name">Project-6</td>
+          <td class="data">Topping candy cheesecake. Cake biscuit sweet roll. Marzipan ice cream bear claw muffin jelly beans. </td>
+        </tr>
+        <tr>
+          <td class="id">3</td>
+          <td class="project-name">Project-7</td>
+          <td class="data">Chocolate cake sweet marshmallow cake I love sweet I love. Toffee apple pie jelly beans. </td>
+        </tr>
+        <tr>
+          <td class="id">2</td>
+          <td class="project-name">Project-8</td>
+          <td class="data">Jelly beans jujubes gingerbread cake. Fruitcake candy canes topping sugar plum sesame snaps topping dragée. </td>
+        </tr>
+        <tr>
+          <td class="id">1</td>
+          <td class="project-name">Project-9</td>
+          <td class="data">Cake sesame snaps brownie pastry muffin apple pie lollipop marshmallow. </td>
+        </tr>
+        <tr>
+          <td class="id">10</td>
+          <td class="project-name">Project-10</td>
+          <td class="data">Chocolate cake bonbon biscuit carrot cake pastry apple pie lollipop liquorice. </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <script type='text/javascript'>
+    var options = {
+      valueNames: ['id', 'project-name', 'data']
+    };
+
+    var projects = new List('projects', options);
+  </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

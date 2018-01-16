@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <style>
+    .container {
+      margin-top: 3em;
+    }
+  </style>
+
+  <title>Test List.js</title>
+</head>
+
+<body>
+  <div class="ui container">
+    <h1>Converting Excel table to HTML table</h1>
+
+
+      <div id="projects">
+        <div class="ui relaxed stackable grid">
+        <div class="row">
+          <div class="twelve wide column">
+            <div class="ui icon input">
+              <input class="search" placeholder="Search" />
+              <i class="search icon"></i>
+            </div>
+              <button class="ui button sort" data-sort="id">
+                Sort by id
+              </button>
+                  <button class="ui button sort" data-sort="project-name">
+                Sort by project name
+              </button>
+                  <button class="ui button sort" data-sort="data">
+                Sort by data
+              </button>
+          </div>
+
+          <div class="twelve wide column">
+            <div class="ui hidden divider"></div>
+          </div>
+
+          <div class="twelve wide column">
+            <table class="ui table">
+              <thead>
+                <th class="id" data-sort="id">ID</th>
+                <th class="project-name" data-sort="project-name">Project Name</th>
+                <th class="data" data-sort="data">data</th>
+              </thead>
+              <!-- IMPORTANT, class="list" have to be at tbody -->
+              <tbody class="list">
+                <tr><td class="id">01</td><td class="project-name">Project-1</td><td class="data">Cupcake ipsum dolor sit. Amet dessert fruitcake chocolate sweet roll jelly. </td></tr>
+                <tr><td class="id">99</td><td class="project-name">Project-2</td><td class="data">Marzipan chocolate bar muffin liquorice sweet. Tart I love macaroon. </td></tr>
+                <tr><td class="id">20</td><td class="project-name">Project-3</td><td class="data">I love macaroon cupcake sugar plum tart I love sweet biscuit jelly. Cotton candy jelly beans topping. </td></tr>
+                <tr><td class="id">84</td><td class="project-name">Project-4</td><td class="data">Fruitcake sweet roll sesame snaps toffee sesame snaps lemon drops chupa chups jujubes. </td></tr>
+                <tr><td class="id">33</td><td class="project-name">Project-5</td><td class="data">Ice cream brownie pudding candy liquorice pie sesame snaps I love. Donut I love candy sugar plum. </td></tr>
+                <tr><td class="id">76</td><td class="project-name">Project-6</td><td class="data">Topping candy cheesecake. Cake biscuit sweet roll. Marzipan ice cream bear claw muffin jelly beans. </td></tr>
+                <tr><td class="id">45</td><td class="project-name">Project-7</td><td class="data">Chocolate cake sweet marshmallow cake I love sweet I love. Toffee apple pie jelly beans. </td></tr>
+                <tr><td class="id">59</td><td class="project-name">Project-8</td><td class="data">Jelly beans jujubes gingerbread cake. Fruitcake candy canes topping sugar plum sesame snaps topping dragée. </td></tr>
+                <tr><td class="id">08</td><td class="project-name">Project-9</td><td class="data">Cake sesame snaps brownie pastry muffin apple pie lollipop marshmallow. </td></tr>
+                <tr><td class="id">61</td><td class="project-name">Project-10</td><td class="data">Chocolate cake bonbon biscuit carrot cake pastry apple pie lollipop liquorice. </td></tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For list.js -->
+  <script type='text/javascript'>
+    var options = {
+      valueNames: ['id', 'project-name', 'data']
+    };
+
+    var projects = new List('projects', options);
+  </script>
+</body>
+
+</html>
