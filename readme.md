@@ -61,7 +61,6 @@ Semantic UI - [site](https://semantic-ui.com/) | [on github](https://github.com/
 ```
 
 7. Then copy and paste the code from your Excel table into the HTML table.
-![Copying Table](https://i.gyazo.com/c20f95d2f3fd5e70fa3f07eb80a13a7a.gif)
 ![Pasting Table](https://i.gyazo.com/023395b88bddb8b9b3b712e9fe310c67.gif)
 
 8. Finally, at the end of the body add the following script adjusted for your variables. In the valueNames array include the ids of your columns. The second var can be named anything. But the first new List input must be the id for the div in step 3. In this case 'projects'.
