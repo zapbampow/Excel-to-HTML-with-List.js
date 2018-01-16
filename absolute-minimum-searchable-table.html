@@ -6,11 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+
+  <style>
+    .container {
+      margin-top: 3em;
+    }
+  </style>
 
   <title>Absolute Minimum for Searchable Table with List.js</title>
+
 </head>
 
 <body>
+  <div class="ui container">
+  <div class="ui menu">
+    <div class="item"><a href="index.html">Searchable HTML Table</a></div>
+    <div class="item"><a href="searchable-table-sidebar.html">Searchable HTML Table with Sidebar</a></div>
+    <div class="item"><a href="absolute-minimum-searchable-table.html">Absolute Minimum Searchable Table</a></div>
+    <div class="right item"><a href="https://github.com/zapbampow/Excel-to-HTML-with-List.js">Tutorial on Github</a></div>
+  </div>
+
+  <h1>The Absolute minimum searchable HTML table</h1>
+  <!-- Well, I've added a Semantic container and menu to this page. But from here until the end there is no extra styling or organizing of the code other than what is absolutely necessary. -->
+
   <div id="projects">
 
     <input class="search" placeholder="Search"></input>
@@ -73,6 +92,7 @@
       </tbody>
     </table>
 
+  </div>
   </div>
 
   <script type='text/javascript'>
