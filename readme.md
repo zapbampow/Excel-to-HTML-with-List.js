@@ -9,6 +9,8 @@ List.js - [site](http://listjs.com/) | [on github](https://github.com/javve/list
 Semantic UI - [site](https://semantic-ui.com/) | [on github](https://github.com/semantic-org/semantic-ui/)
 
 ## Step 1: Flash Fill
+**A Note:** I'm told that if you're using a Mac, Flash Fill isn't a feature. [Here is an alternate method](https://www.uwgb.edu/dutchs/CompTips/ExcelHTML.HTM) for custom HTML tables. It's a little more work, but should also do the job.
+
 1. Start with your Excel table.
 ![An Excel Table](https://i.gyazo.com/63b135a68e6b397cbb4a61262aef5841.png)
 
